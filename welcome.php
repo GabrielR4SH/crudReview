@@ -24,14 +24,14 @@ if (isset($_SESSION['user_id'])) {
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Your custom styles -->
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/welcomeStyle.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-        Welcome, <?php echo $username; ?>
+            Bem vindo(a), <?php echo $username; ?>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,8 +56,123 @@ if (isset($_SESSION['user_id'])) {
 
     <!-- Content of the page -->
     <div class="container mt-4">
-        <h1>Welcome to Your Website</h1>
-        <!-- Add the rest of your content here -->
+        <h1>Aqui estão seus produtos</h1>
+        <hr>
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- Cards aqui -->
+                        <!-- Card 1 -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img src="https://via.placeholder.com/300" class="card-img-top grayscale" alt="Imagem em Tons de Cinza">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img src="https://via.placeholder.com/300" class="card-img-top grayscale" alt="Imagem em Tons de Cinza">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img src="https://via.placeholder.com/300" class="card-img-top grayscale" alt="Imagem em Tons de Cinza">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adicione mais itens conforme necessário -->
+                        <!-- Card 4 -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img src="https://via.placeholder.com/300" class="card-img-top grayscale" alt="Imagem em Tons de Cinza">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img src="https://via.placeholder.com/300" class="card-img-top grayscale" alt="Imagem em Tons de Cinza">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img src="https://via.placeholder.com/300" class="card-img-top grayscale" alt="Imagem em Tons de Cinza">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais itens ao carrossel conforme necessário -->
+            </div>
+            <a class="carousel-control-prev" href="#productCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
     </div>
 
     <!-- Bootstrap JS (optional) -->

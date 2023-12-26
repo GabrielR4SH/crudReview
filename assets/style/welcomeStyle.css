@@ -1,0 +1,13 @@
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgb(229, 19, 149);
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
